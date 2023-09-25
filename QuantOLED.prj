@@ -1,0 +1,145 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="1776258965" file="C:\Users\LabFsAplicada\Desktop\programa_oled\QuantOLED.prj" location="C:\Users\LabFsAplicada\Desktop\programa_oled" name="QuantOLED" preferred-package-location="C:\Users\LabFsAplicada\Desktop\programa_oled\QuantOLED\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>QuantOLED</param.appname>
+    <param.icon>${PROJECT_ROOT}\QuantOLED_resources\icon.ico</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\QuantOLED_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\QuantOLED_resources\icon_32.png</file>
+      <file>${PROJECT_ROOT}\QuantOLED_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\QuantOLED_resources\icon_16.png</file>
+    </param.icons>
+    <param.version>0.2</param.version>
+    <param.authnamewatermark>Grupo de Física Aplicada</param.authnamewatermark>
+    <param.email />
+    <param.company />
+    <param.summary>Programa para caracterizaciònn de dispositivos orgánicos emisores de luz.</param.summary>
+    <param.description>Tiene distintas funciones para obtener curvas caracterísitcas, espectro de emisión, eficiencia de corriente y potencia, en adición con cálculos para la eficiencia cuántica.</param.description>
+    <param.screenshot>C:\Users\LabFsAplicada\Desktop\logo.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\QuantOLED\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo>C:\Users\LabFsAplicada\Desktop\logo.png</param.logo>
+    <param.install.notes>Verificar:
+Que los drivers de los instrumentos a utlizar estén correctamente instalados en el sistema.
+Que los puertos de Comunicación tanto de GPIB y USB tengan la correspondencia adecuada.</param.install.notes>
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\QuantOLED\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\QuantOLED\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\QuantOLED\for_redistribution</param.output>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.required.mcr.products>
+      <item>35000</item>
+      <item>35010</item>
+    </param.required.mcr.products>
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>false</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.email />
+      <param.company />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\oled_meas.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\curva_fotopica.xlsx</file>
+      <file>${PROJECT_ROOT}\EQE_ventana.fig</file>
+      <file>${PROJECT_ROOT}\EQE_ventana.m</file>
+      <file>${PROJECT_ROOT}\getSpectraASEQ.m</file>
+      <file>${PROJECT_ROOT}\guardado.fig</file>
+      <file>${PROJECT_ROOT}\guardado.m</file>
+      <file>${PROJECT_ROOT}\libspectr.h</file>
+      <file>${PROJECT_ROOT}\Modo_IvsV.fig</file>
+      <file>${PROJECT_ROOT}\Modo_IvsV.m</file>
+      <file>${PROJECT_ROOT}\oled_meas.fig</file>
+      <file>${PROJECT_ROOT}\oled_meas.m</file>
+      <file>${PROJECT_ROOT}\oled_Ventana1.fig</file>
+      <file>${PROJECT_ROOT}\oled_Ventana1.m</file>
+      <file>${PROJECT_ROOT}\spectrlib_core_shared.dll</file>
+      <file>${PROJECT_ROOT}\spectrlib_core_shared.lib</file>
+      <file>${PROJECT_ROOT}\Y 2793.txt</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\QuantOLED\for_testing" name="QuantOLED.exe" optional="false">C:\Users\LabFsAplicada\Desktop\programa_oled\QuantOLED\for_testing\QuantOLED.exe</file>
+      <file location="${PROJECT_ROOT}\QuantOLED\for_testing" name="readme.txt" optional="true">C:\Users\LabFsAplicada\Desktop\programa_oled\QuantOLED\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\QuantOLED\for_testing" name="splash.png" optional="false">C:\Users\LabFsAplicada\Desktop\programa_oled\QuantOLED\for_testing\splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2015b</root>
+      <toolboxes>
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.1</osver>
+      <os32>true</os32>
+      <os64>false</os64>
+      <arch>win32</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
